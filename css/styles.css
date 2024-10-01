@@ -1,39 +1,37 @@
 /* styles.css */
 
-/* Import fonts from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap'); /* Elegant serif font */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap'); /* Clean sans-serif font */
+/* Import serif font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&display=swap');
 
 /* General styles */
 body {
-    font-family: 'Open Sans', sans-serif; /* Use Open Sans for body text */
+    font-family: 'Crimson Text', serif; /* Use a serif font */
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9; /* Light background for contrast */
+    background-color: #f5f5f5; /* Light gray background */
     line-height: 1.7; /* Improved readability */
-    color: #444; /* Dark gray text for better contrast */
+    color: #333; /* Dark gray text for better contrast */
 }
 
 /* Header styles */
 header {
-    background: #1d3f72; /* Deep blue background */
+    background: #4b4b4b; /* Dark gray background */
     color: #ffffff; /* White text for contrast */
-    padding: 50px 0; /* Increased padding for elegance */
-    text-align: center;
+    padding: 40px 0; /* Increased padding for elegance */
+    text-align: center; /* Centered text */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 h1 {
-    font-family: 'Playfair Display', serif; /* Elegant font for headings */
     font-size: 2.5rem; /* Larger font size for prominence */
     margin: 0; /* Remove default margin */
 }
 
 /* Navigation styles */
 nav {
-    background: #142d51; /* Darker blue for navigation */
+    background: #383838; /* Slightly darker gray for navigation */
     color: #ffffff; /* White text for visibility */
-    padding: 15px 0; /* Reduced padding for a more compact look */
+    padding: 10px 0; /* Reduced padding for a more compact look */
 }
 
 nav ul {
@@ -52,12 +50,11 @@ nav a {
     color: #ffffff; /* Link color */
     text-decoration: none; /* Remove underline */
     font-weight: 600; /* Make links stand out */
-    transition: color 0.3s, text-shadow 0.3s; /* Smooth transition for hover effect */
+    transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
 nav a:hover {
     color: #f39c12; /* Soft orange color on hover */
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0.6); /* Glow effect on hover */
 }
 
 /* Main content styles */
@@ -73,6 +70,7 @@ main {
 /* Section styles */
 section {
     width: 100%; /* Full width of the container */
+    max-width: 800px; /* Limit width for larger screens */
     padding: 30px;
     border: 1px solid #d0d0d0; /* Light gray border around sections */
     border-radius: 8px; /* Rounded corners for sections */
@@ -82,8 +80,7 @@ section {
 }
 
 h2 {
-    font-family: 'Playfair Display', serif; /* Elegant font for headings */
-    color: #1d3f72; /* Deep blue color for headings */
+    color: #4b4b4b; /* Dark gray color for headings */
     border-bottom: 2px solid #f39c12; /* Underline effect for headings */
     padding-bottom: 10px; /* Space below heading */
     margin-bottom: 20px; /* Space above section content */
@@ -97,13 +94,10 @@ p {
 
 /* Footer styles */
 footer {
-    background: #1d3f72; /* Match footer with header */
+    background: #4b4b4b; /* Match footer with header */
     color: #ffffff; /* White text for contrast */
-    text-align: center;
+    text-align: center; /* Centered text */
     padding: 20px 0; /* Increased padding for footer */
-    position: relative;
-    bottom: 0;
-    width: 100%;
     margin-top: 20px; /* Space above footer */
 }
 
