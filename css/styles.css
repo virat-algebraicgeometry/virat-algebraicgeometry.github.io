@@ -1,10 +1,10 @@
 /* styles.css */
 
 body {
-    font-family: 'CMU Serif', serif; /* Use CMU Serif */
+    font-family: 'CMU Serif', serif; /* Use CMU Serif font */
     margin: 0;
     padding: 0;
-    background-color: #f2f4f8; /* Light gray background */
+    background-color: #f0f0f0; /* Light gray background */
     color: #333; /* Dark gray text color */
 }
 
@@ -59,6 +59,11 @@ h2 {
     font-size: 2em; /* Larger font size for section headings */
     color: #2980b9; /* Blue color for section headings */
     margin-bottom: 10px; /* Space below section headings */
+}
+
+h3 {
+    font-size: 1.5em; /* Size for sub-section headings */
+    color: #34495e; /* Darker blue for sub-section headings */
 }
 
 p {
