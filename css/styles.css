@@ -1,29 +1,32 @@
 /* styles.css */
 
+/* Import CMU Serif font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=CMU+Serif:wght@400;700&display=swap');
+
 /* General styles */
 body {
-    font-family: 'Georgia', serif; /* Use a serif font for a more elegant look */
+    font-family: 'CMU Serif', serif; /* Use CMU Serif font */
     margin: 0;
     padding: 0;
-    background-color: #f2f4f6; /* Very light gray background for a soft appearance */
-    line-height: 1.7; /* Improved readability */
+    background-color: #e8f0f2; /* Soft light blue background for a gentle appearance */
+    line-height: 1.6; /* Improved readability */
     color: #333; /* Dark gray text for better contrast */
 }
 
 /* Header styles */
 header {
-    background: #2c3e50; /* Dark navy background */
-    color: #ecf0f1; /* Light text color for contrast */
-    padding: 30px 0;
+    background: #3b4a69; /* Soft navy background */
+    color: #ffffff; /* White text color for contrast */
+    padding: 40px 0; /* Increased padding for elegance */
     text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
 /* Navigation styles */
 nav {
-    background: #34495e; /* Slightly lighter than the header */
-    color: #ecf0f1; /* Match text color with header */
-    padding: 15px 0;
+    background: #2c3e50; /* Darker navy for navigation */
+    color: #ffffff; /* White text for visibility */
+    padding: 10px 0; /* Reduced padding for a more compact look */
 }
 
 nav ul {
@@ -35,18 +38,18 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px; /* Space between items */
+    margin: 0 15px; /* Space between items */
 }
 
 nav a {
-    color: #ecf0f1; /* Link color */
+    color: #ffffff; /* Link color */
     text-decoration: none; /* Remove underline */
     font-weight: 600; /* Make links stand out */
     transition: color 0.3s, text-shadow 0.3s; /* Smooth transition for hover effect */
 }
 
 nav a:hover {
-    color: #d35400; /* Orange color on hover */
+    color: #f39c12; /* Soft orange color on hover */
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.6); /* Glow effect on hover */
 }
 
@@ -64,24 +67,24 @@ main {
 section {
     margin-bottom: 40px; /* Space between sections */
     padding: 20px;
-    border: 1px solid #e0e0e0; /* Light gray border around sections */
+    border: 1px solid #d0d0d0; /* Light gray border around sections */
     border-radius: 8px; /* Rounded corners for sections */
     background: #f9f9f9; /* Very light background for sections */
 }
 
 h2 {
-    color: #2c3e50; /* Dark navy color for headings */
-    border-bottom: 2px solid #d35400; /* Underline effect for headings */
+    color: #3b4a69; /* Soft navy color for headings */
+    border-bottom: 2px solid #f39c12; /* Underline effect for headings */
     padding-bottom: 10px; /* Space below heading */
     margin-bottom: 20px; /* Space above section content */
 }
 
 /* Footer styles */
 footer {
-    background: #2c3e50; /* Match footer with header */
-    color: #ecf0f1; /* Light text color for contrast */
+    background: #3b4a69; /* Match footer with header */
+    color: #ffffff; /* White text for contrast */
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 0; /* Increased padding for footer */
     position: relative;
     bottom: 0;
     width: 100%;
