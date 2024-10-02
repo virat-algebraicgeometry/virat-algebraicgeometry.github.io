@@ -1,91 +1,99 @@
-/* Reset default browser styling */
+/* Reset default styling to ensure consistency across browsers */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
+/* Body Styling */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0; /* Light gray background */
-    color: #666666; /* Gray text color */
-    line-height: 1.6;
-    padding-bottom: 50px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f4f4;  /* Very light gray background */
+    color: #444;  /* Dark gray for text */
+    line-height: 1.8;
+    padding: 0;
+    margin: 0;
 }
 
-/* Header styling */
-header {
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
-    padding: 20px 0;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-header .container {
+/* Container Class for Layout Control */
+.container {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background-color: #fff;  /* White background */
+    border-bottom: 2px solid #e0e0e0;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    color: #333333; /* Darker gray for the header */
     font-size: 2.5em;
+    color: #333;  /* Dark gray for headings */
+    text-align: center;
+    font-weight: 300;
     margin-bottom: 10px;
 }
 
+/* Navigation Menu */
 nav ul {
     list-style: none;
+    text-align: center;
+    margin-top: 10px;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #666666;
-    font-weight: bold;
-    font-size: 1.1em;
+    color: #555;  /* Slightly lighter gray */
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #333333; /* Darker gray hover effect */
+    color: #000;  /* Darker on hover */
 }
 
-/* Main content section */
+/* Main Section Styling */
 main {
-    width: 90%;
-    max-width: 1200px;
-    margin: 30px auto;
+    margin: 40px 0;
 }
 
 section {
-    background: #ffffff;
-    padding: 25px;
-    margin-bottom: 30px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    margin-bottom: 40px;
 }
 
 section h2 {
-    color: #333333;
-    font-size: 1.8em;
+    font-size: 2em;
+    color: #333;
     margin-bottom: 15px;
     border-bottom: 2px solid #e0e0e0;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    font-weight: 500;
 }
 
 section p {
     font-size: 1.1em;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    color: #666;
 }
 
+/* Lists inside sections */
 section ul {
     list-style: none;
-    padding: 0;
+    padding-left: 0;
 }
 
 section ul li {
@@ -94,36 +102,67 @@ section ul li {
 
 section ul li a {
     text-decoration: none;
-    color: #0066cc; /* Blue link color */
+    color: #007acc;  /* Blue for links */
     font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 section ul li a:hover {
-    color: #004499; /* Darker blue hover effect */
+    color: #005f99;  /* Darker blue on hover */
 }
 
-/* Footer styling */
+/* Footer Styling */
 footer {
-    background-color: #ffffff;
-    color: #666666;
+    background-color: #fff;
+    color: #888;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     border-top: 1px solid #e0e0e0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
 }
 
 footer p {
+    font-size: 0.9em;
     margin: 0;
 }
 
 footer a {
     text-decoration: none;
-    color: #666666;
+    color: #888;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 footer a:hover {
-    color: #333333;
+    color: #333;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.6em;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    section {
+        padding: 20px;
+    }
 }
