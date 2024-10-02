@@ -1,20 +1,20 @@
-/* Reset default styling */
+/* Reset default browser styling */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and general settings */
+/* Body styling */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0; /* Light gray background */
-    color: #666666; /* Soft gray text color */
-    line-height: 1.7;
+    color: #666666; /* Gray text color */
+    line-height: 1.6;
     padding-bottom: 50px;
 }
 
-/* Header */
+/* Header styling */
 header {
     background-color: #ffffff;
     border-bottom: 1px solid #e0e0e0;
@@ -55,7 +55,7 @@ nav ul li a:hover {
     color: #333333; /* Darker gray hover effect */
 }
 
-/* Main content sections */
+/* Main content section */
 main {
     width: 90%;
     max-width: 1200px;
@@ -94,7 +94,7 @@ section ul li {
 
 section ul li a {
     text-decoration: none;
-    color: #0066cc; /* Blue link color for better contrast */
+    color: #0066cc; /* Blue link color */
     font-weight: bold;
 }
 
@@ -102,7 +102,7 @@ section ul li a:hover {
     color: #004499; /* Darker blue hover effect */
 }
 
-/* Footer */
+/* Footer styling */
 footer {
     background-color: #ffffff;
     color: #666666;
