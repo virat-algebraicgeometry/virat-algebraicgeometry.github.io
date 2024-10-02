@@ -3,48 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Virat's Math Expository Writings, Problems, and Solutions">
     <title>Virat's Math Website</title>
-    
-    <!-- Link to CSS file -->
-    <link rel="stylesheet" href="styles.css">
-    
-    <!-- Link to Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=CMU+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header section -->
     <header>
-        <h1>Welcome to Virat's Expository Math Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Writings</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">Math Stuff</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Virat's Math Website</h1>
+            <nav>
+                <ul>
+                    <li><a href="#writings">Expository Writings</a></li>
+                    <li><a href="#problems">Problems & Solutions</a></li>
+                    <li><a href="#other">Other Math Stuff</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Main content section -->
     <main>
-        <h2>Expository Writings, Articles, and Math Stuff</h2>
-        <p>This website is dedicated to sharing my expository writings, articles, and various explorations in the field of mathematics. Here you will find insights on topics such as motives, homological algebra, and algebraic geometry.</p>
+        <section id="writings">
+            <h2>Expository Writings</h2>
+            <p>Dive into detailed expositions on various mathematical topics I've explored.</p>
+            <ul>
+                <li><a href="writing1.html">Grothendieck-Riemann-Roch Theorem</a></li>
+                <li><a href="writing2.html">Chow Rings and Chern Classes</a></li>
+            </ul>
+        </section>
 
-        <h3>Recent Articles</h3>
-        <ul>
-            <li><a href="#">Article 1: Understanding Motives</a></li>
-            <li><a href="#">Article 2: An Introduction to Homological Algebra</a></li>
-            <li><a href="#">Article 3: The Role of Stacks in Algebraic Geometry</a></li>
-        </ul>
+        <section id="problems">
+            <h2>Problems & Solutions</h2>
+            <p>Explore thought-provoking mathematical problems and their solutions.</p>
+            <ul>
+                <li><a href="problem1.html">Problem 1: Algebraic Geometry</a></li>
+                <li><a href="problem2.html">Problem 2: Group Theory</a></li>
+            </ul>
+        </section>
+
+        <section id="other">
+            <h2>Other Math Stuff</h2>
+            <p>Discover various other mathematical content that I find fascinating.</p>
+            <ul>
+                <li><a href="resource1.html">Resource 1</a></li>
+                <li><a href="resource2.html">Resource 2</a></li>
+            </ul>
+        </section>
     </main>
 
-    <!-- Footer section -->
     <footer>
-        <p>&copy; 2024 Virat Chauhan. All Rights Reserved.</p>
+        <p>&copy; 2024 Virat's Math Website | <a href="https://virat-algebraicgeometry.github.io/">GitHub</a></p>
     </footer>
 
-    <!-- Link to JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
