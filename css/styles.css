@@ -1,42 +1,32 @@
-/* Reset default styling for cross-browser consistency */
+/* Basic reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* General Body Styling */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean, modern font */
-    background-color: #f4f4f4; /* Light gray background */
-    color: #666; /* Soft gray for main text */
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Light gray background */
+    color: #333; /* Dark gray text */
     line-height: 1.6;
-    font-size: 16px;
 }
 
-/* Header Section */
 header {
-    background-color: #ffffff; /* White background for header */
-    padding: 20px 0;
-    text-align: center; /* Center all header elements */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: #e0e0e0; /* Slightly darker gray */
+    text-align: center;
+    padding: 20px;
 }
 
 .header-icon {
-    width: 80px; /* Reduced icon size */
-    margin: 10px 0; /* Space above and below the icon */
-    border-radius: 50%; /* Rounded corners for a softer look */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for icon */
-    transition: transform 0.3s ease; /* Smooth scaling effect */
+    width: 100px; /* Reduced icon size */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 15px;
 }
 
-.header-icon:hover {
-    transform: scale(1.1); /* Scale icon on hover */
-}
-
-/* Navigation Styling */
-nav {
-    margin-top: 15px; /* Space above navigation */
+h1 {
+    font-size: 2.5em;
+    color: #555; /* Medium gray */
 }
 
 nav ul {
@@ -45,103 +35,46 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 15px; /* Space between navigation items */
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #666; /* Gray for links */
-    font-size: 1.1em; /* Slightly larger font for readability */
-    font-weight: 600; /* Bold links for emphasis */
-    padding: 10px 15px; /* Padding around links */
-    border-bottom: 2px solid transparent; /* Underline effect */
-    transition: color 0.3s, border-color 0.3s; /* Smooth transitions */
+    color: #333; /* Dark gray */
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    color: #007acc; /* Blue on hover */
-    border-bottom: 2px solid #007acc; /* Underline on hover */
+    color: #007BFF; /* Blue color on hover */
 }
 
-/* Main Section Styling */
 main {
-    margin: 30px auto; /* Center the main content */
-    padding: 20px; /* Padding for main content */
-    max-width: 800px; /* Max width for content */
+    padding: 20px;
 }
 
-/* Section Styling */
 section {
-    background-color: #ffffff; /* White background for sections */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for sections */
-    padding: 20px; /* Padding inside sections */
-    margin-bottom: 30px; /* Space between sections */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff; /* White background for sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
-section:hover {
-    transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
+h2 {
+    font-size: 2em;
+    color: #333; /* Dark gray */
 }
 
-section h2 {
-    font-size: 2em; /* Heading size */
-    color: #333; /* Darker color for headings */
-    margin-bottom: 15px; /* Space below headings */
-    border-bottom: 2px solid #007acc; /* Blue underline for headings */
-    padding-bottom: 5px; /* Space below heading text */
-}
-
-section p {
-    font-size: 1em; /* Normal text size */
-    color: #666; /* Gray for normal text */
-    margin-bottom: 15px; /* Space below paragraphs */
-}
-
-/* List Styling */
-ul {
-    list-style-type: disc; /* Bullet points */
-    margin-left: 20px; /* Indent the list */
-}
-
-ul li {
-    margin-bottom: 10px; /* Space between list items */
-}
-
-/* Footer Styling */
 footer {
-    background-color: #f4f4f4; /* Match the body background */
-    color: #888; /* Light gray text */
-    text-align: center; /* Centered text */
-    padding: 15px 0; /* Padding for footer */
-    border-top: 1px solid #e0e0e0; /* Top border */
-    margin-top: 30px; /* Space above footer */
+    text-align: center;
+    padding: 20px;
+    background-color: #e0e0e0; /* Match header background */
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 footer p {
-    font-size: 0.9em; /* Slightly smaller text */
-}
-
-footer a {
-    text-decoration: none;
-    color: #888; /* Gray for footer links */
-    transition: color 0.3s; /* Smooth color transition */
-}
-
-footer a:hover {
-    color: #333; /* Darker on hover */
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block; /* Stack links vertically on small screens */
-        margin: 10px 0; /* Space between links */
-    }
-
-    .header-icon {
-        width: 60px; /* Smaller icon on mobile */
-    }
+    margin: 5px 0;
 }
