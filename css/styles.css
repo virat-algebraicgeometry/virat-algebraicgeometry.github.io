@@ -7,7 +7,7 @@
 
 /* General Body Styling */
 body {
-    font-family: 'Arial', sans-serif; /* A clean, modern font */
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
     background-color: #f0f0f0; /* Light gray background */
     color: #666; /* Soft gray for main text */
     line-height: 1.6;
@@ -23,7 +23,7 @@ header {
 }
 
 .header-icon {
-    width: 100px; /* Reduced icon size */
+    width: 80px; /* Reduced icon size */
     margin: 10px 0; /* Space above and below the icon */
     border-radius: 50%; /* Rounded corners for a softer look */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for icon */
