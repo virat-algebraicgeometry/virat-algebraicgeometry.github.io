@@ -7,8 +7,8 @@
 
 /* General Body Styling */
 body {
-    font-family: 'Arial', sans-serif; /* Clean, modern font */
-    background-color: #f0f0f0; /* Light gray background */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean, modern font */
+    background-color: #f4f4f4; /* Light gray background */
     color: #666; /* Soft gray for main text */
     line-height: 1.6;
     font-size: 16px;
@@ -19,7 +19,7 @@ header {
     background-color: #ffffff; /* White background for header */
     padding: 20px 0;
     text-align: center; /* Center all header elements */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 .header-icon {
@@ -27,13 +27,21 @@ header {
     margin: 10px 0; /* Space above and below the icon */
     border-radius: 50%; /* Rounded corners for a softer look */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for icon */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
+.header-icon:hover {
+    transform: scale(1.1); /* Scale icon on hover */
 }
 
 /* Navigation Styling */
+nav {
+    margin-top: 15px; /* Space above navigation */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 15px; /* Space above navigation */
 }
 
 nav ul li {
@@ -47,12 +55,13 @@ nav ul li a {
     font-size: 1.1em; /* Slightly larger font for readability */
     font-weight: 600; /* Bold links for emphasis */
     padding: 10px 15px; /* Padding around links */
-    transition: color 0.3s, transform 0.2s; /* Smooth transitions */
+    border-bottom: 2px solid transparent; /* Underline effect */
+    transition: color 0.3s, border-color 0.3s; /* Smooth transitions */
 }
 
 nav ul li a:hover {
     color: #007acc; /* Blue on hover */
-    transform: translateY(-2px); /* Slight lift effect */
+    border-bottom: 2px solid #007acc; /* Underline on hover */
 }
 
 /* Main Section Styling */
@@ -66,20 +75,23 @@ main {
 section {
     background-color: #ffffff; /* White background for sections */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for sections */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Shadow for sections */
     padding: 20px; /* Padding inside sections */
     margin-bottom: 30px; /* Space between sections */
-    transition: transform 0.3s; /* Smooth scaling on hover */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
 }
 
 section:hover {
     transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Deeper shadow on hover */
 }
 
 section h2 {
     font-size: 2em; /* Heading size */
     color: #333; /* Darker color for headings */
     margin-bottom: 15px; /* Space below headings */
+    border-bottom: 2px solid #007acc; /* Blue underline for headings */
+    padding-bottom: 5px; /* Space below heading text */
 }
 
 section p {
@@ -88,9 +100,19 @@ section p {
     margin-bottom: 15px; /* Space below paragraphs */
 }
 
+/* List Styling */
+ul {
+    list-style-type: disc; /* Bullet points */
+    margin-left: 20px; /* Indent the list */
+}
+
+ul li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
 /* Footer Styling */
 footer {
-    background-color: #f0f0f0; /* Match the body background */
+    background-color: #f4f4f4; /* Match the body background */
     color: #888; /* Light gray text */
     text-align: center; /* Centered text */
     padding: 15px 0; /* Padding for footer */
@@ -110,4 +132,16 @@ footer a {
 
 footer a:hover {
     color: #333; /* Darker on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack links vertically on small screens */
+        margin: 10px 0; /* Space between links */
+    }
+
+    .header-icon {
+        width: 60px; /* Smaller icon on mobile */
+    }
 }
