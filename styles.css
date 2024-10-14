@@ -12,7 +12,7 @@ body {
 /* Header styles */
 header {
     background-color: #d3d3d3;               /* Rich dark gray header */
-    color: #ecf0f1;                          /* Softer white text for contrast */
+    color: #696969	;                          /* Softer white text for contrast */
     text-align: center;
     padding: 30px 20px;                      /* Increased padding for breathing space */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Refined shadow for depth */
