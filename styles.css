@@ -11,7 +11,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: #34495e;               /* Rich dark gray header */
+    background-color: #d3d3d3;               /* Rich dark gray header */
     color: #ecf0f1;                          /* Softer white text for contrast */
     text-align: center;
     padding: 30px 20px;                      /* Increased padding for breathing space */
