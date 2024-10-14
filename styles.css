@@ -30,7 +30,7 @@ main {
     padding: 20px;
     background-color: #ffffff;        /* White content background */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for main content */
-    border-radius: 10px;              /* Rounded corners */
+  /*  border-radius: 10px;              /* Rounded corners */
 }
 
 h2 {
