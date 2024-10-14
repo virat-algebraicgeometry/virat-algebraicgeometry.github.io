@@ -1,68 +1,93 @@
-
 /* General styles */
 body {
-    font-family: 'Arial', sans-serif;  /* Arial font */
-    background-color: #f0f0f0;         /* Light gray background */
-    color: #2c3e50;                    /* Dark gray text */
+    font-family: 'Arial', sans-serif;        /* Clean sans-serif font */
+    background-color: #f4f4f9;               /* Soft off-white background */
+    color: #2c3e50;                          /* Elegant dark gray text */
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    line-height: 1.8;                        /* Increased for better readability */
+    font-size: 16px;                         /* Comfortable base font size */
 }
 
 /* Header styles */
 header {
-    background-color: #D3D3D3;        /* Dark gray header */
-    color: #303030	;                   /* White text */
+    background-color: #34495e;               /* Rich dark gray header */
+    color: #ecf0f1;                          /* Softer white text for contrast */
     text-align: center;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    padding: 30px 20px;                      /* Increased padding for breathing space */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Refined shadow for depth */
+    position: relative;
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 2.5em;                        /* Slightly reduced for balance */
     margin: 0;
+    letter-spacing: 1px;                     /* Spacing for a sleek look */
+    text-transform: uppercase;               /* Uppercase for a bold statement */
 }
 
 /* Main content styles */
 main {
-    max-width: 1920px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff;        /* White content background */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for main content */
-  /*  border-radius: 10px;              /* Rounded corners */
+    max-width: 1200px;                       /* Restrained width for readability */
+    margin: 40px auto;                       /* Ample spacing around content */
+    padding: 30px;
+    background-color: #ffffff;               /* Crisp white background */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for modern effect */
+    border-radius: 12px;                     /* Slightly more pronounced rounding */
+    transition: all 0.3s ease;               /* Smooth transitions for interaction */
+}
+
+main:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
 }
 
 h2 {
     font-size: 2em;
-    color: #2c3e50;
-    margin-bottom: 10px;
+    color: #2c3e50;                          /* Consistent dark gray */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ecf0f1;        /* Underline for section clarity */
+    padding-bottom: 10px;
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 1.75em;
     color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 ul {
-    padding-left: 20px;
+    padding-left: 30px;                      /* Aligned for better readability */
+    list-style-type: disc;                   /* Classic list styling */
 }
 
 li {
     margin-bottom: 10px;
+    color: #2c3e50;
 }
 
 /* Footer styles */
 footer {
-    background-color: #2c3e50;
-    color: #ffffff;
+    background-color: #2c3e50;               /* Deep gray footer */
+    color: #ecf0f1;                          /* Contrasting soft white text */
     text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+    padding: 20px 0;                         /* Balanced footer padding */
     position: relative;
     width: 100%;
 }
 
 footer p {
     margin: 0;
+    font-size: 0.9em;                        /* Subtle, unobtrusive footer text */
+}
+
+footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+footer a:hover {
+    color: #3498db;                          /* Interactive blue link hover effect */
 }
