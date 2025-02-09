@@ -5,6 +5,7 @@ Welcome to my GitHub-based website! Here, I will be posting my expository writin
 - Algebraic Geometry
 - Category Theory
 - Homological Algebra
+- Homotopical Algebra
 - Spectral Algebraic Geometry
 - Derived Algebraic Geometry
 - Motives and more!
