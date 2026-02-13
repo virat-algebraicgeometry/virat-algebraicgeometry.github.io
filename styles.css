@@ -19,6 +19,16 @@ header {
     position: relative;
 }
 
+
+.header-image {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px;
+    opacity: 0.95;              /* Slight softness */
+}
+
+
 header h1 {
     font-size: 2.5em;                        /* Slightly reduced for balance */
     margin: 0;
