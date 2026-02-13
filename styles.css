@@ -33,7 +33,7 @@ header h1 {
     font-size: 2.5em;                        /* Slightly reduced for balance */
     margin: 0;
     letter-spacing: 1px;                     /* Spacing for a sleek look */
-    text-transform: uppercase;               /* Uppercase for a bold statement */
+   /* text-transform: uppercase;  */             /* Uppercase for a bold statement */
 }
 
 /* Main content styles */
